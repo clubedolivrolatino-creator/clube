@@ -13,9 +13,9 @@
     position: absolute;
     transform: translate(-50%, -50%);
     
-    /* 🔥 tamanho controlado e responsivo */
+    /* 🔥 tamanho controlado */
     width: clamp(120px, 25vw, 260px);
-    height: clamp(50px, 10vw, 100px);
+    height: clamp(40px, 8vw, 80px); /* 🔥 altura menor */
 
     display: flex;
     justify-content: center;
@@ -25,13 +25,12 @@
     font-weight: bold;
 
     /* 🔥 texto mais equilibrado */
-    font-size: clamp(5px, 2vw, 18px);
+    font-size: clamp(10px, 1.8vw, 16px);
 
     color: white;
     background-color: transparent;
 
-    /* 🔥 formato de botão (não círculo) */
-    border-radius: 30px;
+    border-radius: 25px;
     border: none;
 
     white-space: nowrap;
@@ -51,14 +50,14 @@
 /* 📱 AJUSTE PARA CELULAR */
 @media (max-width: 600px) {
     .botao {
-        width: clamp(100px, 40vw, 200px);
-        height: clamp(40px, 12vw, 80px);
+        width: 38vw;     /* 🔥 menor */
+        height: 8vw;     /* 🔥 bem mais fino */
 
-        /* 🔥 texto menor no mobile */
-        font-size: clamp(9px, 3vw, 10px);
+        font-size: 10px; /* 🔥 controla o texto */
 
-        /* 🔥 permite quebrar linha se precisar */
-        white-space: normal;
-        text-align: center;
+        border-radius: 20px;
+
+        white-space: nowrap; /* 🔥 evita crescer */
+        padding: 0;
     }
 }
