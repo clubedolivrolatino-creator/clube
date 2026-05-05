@@ -8,41 +8,40 @@
     display: block;
 }
 
-/* estilo dos botões */ 
+/* BOTÃO BASE */
 .botao {
-
-    white-space: nowrap;
-   position: absolute;
+    position: absolute;
     transform: translate(-50%, -50%);
     
-    width: 400px;
-    height: 160px;
+    /* 🔥 tamanho responsivo */
+    width: 35vw;
+    height: 35vw;
+    max-width: 400px;
+    max-height: 160px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
     text-align: center;
     font-weight: bold;
-    font-size: clamp(14px, 4vw, 24px);
+
+    /* 🔥 texto responsivo */
+    font-size: clamp(12px, 3.5vw, 22px);
 
     color: white;
     background-color: transparent;
-    border-radius: 100%;
+
+    border-radius: 50%;
     border: none;
+
+    /* evita quebrar e sair do botão */
+    white-space: nowrap;
 }
 
-/* 📱 Ajuste para celular */
-@media (max-width: 600px) {
-    .botao {
-        width: 70%;
-        height: auto;
-        padding: 20px;
-    }
-}
-
-/* 🔥 POSIÇÕES BASEADAS NA SUA IMAGEM */
+/* 📍 POSIÇÕES (mantidas) */
 .botao1 {
-    top: 77.90%;
+    top: 77.9%;
     left: 50%;
 }
 
@@ -51,3 +50,13 @@
     left: 50%;
 }
 
+/* 📱 AJUSTE FINO PARA CELULAR */
+@media (max-width: 600px) {
+    .botao {
+        width: 45vw;
+        height: 45vw;
+
+        /* texto um pouco menor pra caber melhor */
+        font-size: clamp(10px, 3.8vw, 18px);
+    }
+}
