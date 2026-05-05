@@ -8,7 +8,7 @@
     display: block;
 }
 
-/* estilo dos botões */
+/* estilo dos botões */ 
 .botao {
    position: absolute;
     transform: translate(-50%, -50%);
@@ -21,15 +21,21 @@
 
     text-align: center;
     font-weight: bold;
-
-    /* 🔥 RESPONSIVO */
     font-size: clamp(14px, 4vw, 24px);
 
     color: white;
     background-color: transparent;
     border-radius: 100%;
     border: none;
-    outline: none;
+}
+
+/* 📱 Ajuste para celular */
+@media (max-width: 600px) {
+    .botao {
+        width: 70%;
+        height: auto;
+        padding: 20px;
+    }
 }
 
 /* 🔥 POSIÇÕES BASEADAS NA SUA IMAGEM */
