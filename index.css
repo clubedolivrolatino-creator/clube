@@ -1,0 +1,45 @@
+.container {
+    position: relative;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* estilo dos botões */
+.botao {
+   position: absolute;
+    transform: translate(-50%, -50%);
+    
+    width: 400px;
+    height: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-weight: bold;
+
+    /* 🔥 RESPONSIVO */
+    font-size: clamp(14px, 4vw, 24px);
+
+    color: white;
+    background-color: transparent;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+}
+
+/* 🔥 POSIÇÕES BASEADAS NA SUA IMAGEM */
+.botao1 {
+    top: 77.90%;
+    left: 50%;
+}
+
+.botao2 {
+    top: 40.2%;
+    left: 50%;
+}
+
